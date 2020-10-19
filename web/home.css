@@ -1,0 +1,184 @@
+.home-main {
+  display: grid;
+  grid-template-rows: calc(100vh - 100px) 450px 400px 550px 380px;
+  grid-template-areas: "banner" "about" "events" "testimonies" "join";
+  background-color: var(--pri-background-color);
+}
+
+.banner {
+  grid-area: banner;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("./images/homepage-1.webp") center/cover no-repeat fixed;
+}
+
+.banner * {
+  color: white;
+  padding: 10px 0;
+}
+
+.banner h1 {
+  margin-top: 120px;
+  text-transform: uppercase;
+}
+
+.about {
+  grid-area: about;
+  padding-top: 60px;
+}
+
+.about-body {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "about-desc" "about-btn";
+  gap: 40px;
+  margin: auto;
+}
+
+.about-body p {
+  grid-area: about-desc;
+  padding-top: 40px;
+  width: 60%;
+  margin: auto;
+}
+
+.to-about {
+  grid-area: about-btn;
+  height: max-content;
+}
+
+.events {
+  grid-area: events;
+}
+
+.events-pic {
+  display: none;
+}
+
+.events-box {
+  border: solid black 2px;
+  margin: 0px 30px;
+  padding: 70px;
+  height: auto;
+}
+
+.testimonies {
+  grid-area: testimonies;
+  padding-top: 60px;
+  background-color: var(--sec-background-color);
+  margin: 0 10px;
+}
+
+.testimonies-pic {
+  display: none;
+}
+
+.to-testimonies {
+  margin-top: 25px;
+}
+
+.join {
+  grid-area: join;
+  padding-top: 60px;
+}
+
+.cta {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "curriculum-btn" "apply-btn";
+  padding-top: 50px;
+  gap: 25px;
+}
+
+.to-curriculum {
+  grid-area: curriculum-btn;
+}
+
+.to-apply {
+  grid-area: apply-btn;
+}
+
+@media screen and (min-width: 700px) {
+  .home-main {
+    grid-template-rows: calc(100vh - 100px) 420px 380px 550px 380px;
+  }
+
+  .active-slide {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home-main {
+    grid-template-rows: calc(100vh - 100px) 390px 430px 550px 800px;
+  }
+
+  .events-box {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "events-pic events-writeup";
+    border: solid black 2px;
+    margin: auto;
+    padding: 0px;
+    width: 90vw;
+  }
+
+  .events-pic {
+    grid-area: events-pic;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: solid black 2px;
+  }
+
+  .events-writeup {
+    grid-area: events-writeup;
+    padding: 100px 25px;
+  }
+
+  .join {
+    margin-top: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url("./images/class-photo-cropped.jpg") center/cover no-repeat;
+  }
+
+  .join h1 {
+    color: white;
+  }
+
+  .join .btn {
+    background-color: var(--pri-background-color);
+  }
+
+  .join .btn:hover,
+  .join .btn:active {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .home-main {
+    grid-template-rows: calc(100vh - 100px) 390px 430px 600px 800px;
+  }
+
+  .testimonies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "testimonies testimonies-pic";
+    padding-top: 0px;
+  }
+
+  .testimonies-pic {
+    grid-area: testimonies-pic;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: auto 5vw;
+  }
+
+  .carousel {
+    grid-area: testimonies;
+  }
+}

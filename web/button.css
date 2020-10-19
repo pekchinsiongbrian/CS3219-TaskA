@@ -1,0 +1,16 @@
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: max-content;
+  justify-self: center;
+  padding: 1rem;
+  color: black;
+  border: solid black 2px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(160, 160, 160);
+  color: white;
+  transition: all ease-in-out 0.3s;
+}

@@ -1,0 +1,47 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.carousel-track-container {
+  height: 200px;
+  display: grid;
+  align-content: center;
+  margin: 20px 10vw;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.active-slide {
+  display: block;
+}
+
+.carousel-nav {
+  display: flex;
+}
+
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.active-slide-indicator {
+  background: black;
+}
+
+.carousel-btn-left,
+.carousel-btn-right {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0 15px;
+}

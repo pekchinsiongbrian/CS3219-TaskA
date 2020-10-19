@@ -1,0 +1,140 @@
+.about-main {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "about" "vision-mission" "team" "faq";
+  background-color: var(--pri-background-color);
+}
+
+.about {
+  grid-area: about;
+  padding: 40px;
+}
+
+.about-pic,
+.vision-pic,
+.mission-pic {
+  border: solid black 2px;
+  max-width: 90vw;
+  margin: 20px;
+}
+
+.about-writeup {
+  margin: 20px;
+}
+
+.vision-mission {
+  grid-area: vision-mission;
+  padding: 60px 40px;
+}
+
+.mission {
+  margin-top: 60px;
+}
+
+.carousel {
+  grid-area: team;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "our-team" "writeup" "carousel-nav";
+}
+
+.carousel-img {
+  max-width: 20vw;
+}
+
+.carousel h1 {
+  grid-area: our-team;
+}
+
+.carousel-track-container {
+  grid-area: writeup;
+  padding-top: 230px;
+}
+
+.carousel-nav {
+  grid-area: carousel-nav;
+  padding-top: 250px;
+}
+
+.accordion-container {
+  margin: 60px auto 120px auto;
+  max-width: 70vw;
+}
+
+@media screen and (min-width: 700px) {
+  .vision-mission {
+    grid-area: vision-mission;
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about-writeup {
+    margin: 40px;
+    text-align: left;
+  }
+
+  .about-pic {
+    float: right;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+  .vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "vision-pic vision-writeup";
+  }
+
+  .vision-pic {
+    grid-area: vision-pic;
+    justify-self: end;
+  }
+
+  .vision-writeup {
+    grid-area: vision-writeup;
+    justify-self: start;
+    text-align: left;
+  }
+
+  .vision h1 {
+    padding-top: 100px;
+  }
+
+  .vision p {
+    padding-top: 150px;
+  }
+
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mission-writeup mission-pic";
+  }
+
+  .mission-pic {
+    grid-area: mission-pic;
+  }
+
+  .mission-writeup {
+    grid-area: mission-writeup;
+    padding-top: 100px;
+    justify-self: end;
+    text-align: right;
+  }
+
+  .mission h1 {
+    padding-top: 100px;
+  }
+
+  .mission p {
+    padding-top: 150px;
+  }
+
+  .carousel-img {
+    max-width: 15vw;
+  }
+
+  .accordion-container {
+    max-width: 65vw;
+  }
+}

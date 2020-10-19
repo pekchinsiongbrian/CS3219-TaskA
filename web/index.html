@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39e014e4d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./template.css" />
+    <link rel="stylesheet" type="text/css" href="./home.css" />
+    <link rel="stylesheet" type="text/css" href="./carousel.css" />
+    <link rel="stylesheet" type="text/css" href="./button.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="./images/rhema logo.png" alt="Rhema Singapore" />
+        </a>
+      </div>
+      <div class="menu-btn">
+        <div class="menu-btn-burger"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/"><b>Home</b></a>
+          </li>
+          <li class="about-dropdown">
+            <a href="#/">About</a>
+            <div class="about-dropdown-content">
+              <a href="/about/about.html#about">About Us</a>
+              <a href="/about/about.html#team">Our team</a>
+              <a href="/about/about.html#faq">FAQ</a>
+            </div>
+          </li>
+          <li class="curriculum-dropdown">
+            <a href="#/">Curriculum</a>
+            <div class="curriculum-dropdown-content">
+              <a href="#">Our courses</a>
+              <a href="#">Schedule</a>
+              <a href="#">Fees</a>
+              <a href="#">Taster</a>
+              <a href="#">Apply</a>
+            </div>
+          </li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Testimonies</a></li>
+          <li><a href="#">Give</a></li>
+          <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main home-main">
+      <section class="banner">
+        <h1>Rhema Singapore</h1>
+        <h2>The spoken word</h2>
+      </section>
+      <section class="about">
+        <h1>About us</h1>
+        <div class="about-body">
+          <p>
+            RHEMA Singapore is a Bible school that focuses on teaching the Word
+            of God and its practical applications in daily life. We will equip
+            you with the tools necessary to fulfill whatever calling God has
+            upon your life. <br />
+            <br />
+            Come find out more about us!
+          </p>
+          <a href="/about/about.html" class="btn to-about">More about us</a>
+        </div>
+      </section>
+      <section class="events">
+        <div class="events-box">
+          <img src="./images/event.jpeg" alt="events" class="events-pic" />
+          <div class="events-writeup">
+            <h1>Upcoming Events</h1>
+            <br />
+            <p>
+              Click the button below to check out any upcoming events that you
+              won't want to miss!
+            </p>
+            <br /><br />
+            <a href="#" class="btn to-events">Upcoming Events</a>
+          </div>
+        </div>
+      </section>
+      <section class="testimonies">
+        <img
+          src="./images/homepage-2 cropped.png"
+          alt="testimonies"
+          class="testimonies-pic"
+        />
+        <div class="carousel">
+          <h1>Testimonies</h1>
+          <br />
+          <i class="fas fa-quote-left fa-2x"></i>
+          <br />
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide active-slide">
+                RHEMA Bible Training Center has been a tremendous blessing.
+                Flexible schedules, affordable, and an amazing place to gain
+                formal knowledge and learn to walk closer with God.
+                <br /><br />
+                <b>Sue Dass</b>
+              </li>
+              <li class="carousel-slide">
+                Solid Christian Education that confirms, affirms, and
+                illuminates the Word of God for our growth from faith to faith,
+                glory to glory in Christ Jesus.
+                <br /><br />
+                <b>Brandon Pek</b>
+              </li>
+              <li class="carousel-slide">
+                Best place to learn and dwell in the Word of God. RHEMA teaches
+                life skills and it's a place where lives get transformed.
+                <br /><br />
+                <b>George Pratab Kumar</b>
+              </li>
+              <li class="carousel-slide">
+                RHEMA Bible Training Center is a place where rivers of living
+                water flow. The teachings are life changing, and the flow of the
+                Holy Spirit in the classroom is palpable. Thank You Lord!
+                <br /><br />
+                <b>Fiona Ong</b>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-btn-left">
+              <i class="fas fa-chevron-left fa-2x"></i>
+            </button>
+            <div class="carousel-indicator-container">
+              <button
+                class="carousel-indicator active-slide-indicator"
+              ></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
+              <button class="carousel-indicator"></button>
+            </div>
+            <button class="carousel-btn-right">
+              <i class="fas fa-chevron-right fa-2x"></i>
+            </button>
+          </div>
+          <a href="#" class="btn to-testimonies">More testimonies</a>
+        </div>
+      </section>
+      <section class="join">
+        <h1>Join RHEMA Singapore today!</h1>
+        <div class="cta">
+          <a href="#" class="btn to-curriculum">Curriculum</a>
+          <a href="/contact/contact.html#apply" class="btn to-apply">Apply</a>
+        </div>
+      </section>
+    </main>
+    <button onclick="topFunction()" class="topBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i><br />Top
+    </button>
+    <footer class="footer">
+      <div class="copyright">&copy; 2020 Rhema Singapore</div>
+      <div class="social">
+        <p>
+          Follow us:
+          <a href="https://www.facebook.com/rhema.singapore/" target="_blank"
+            ><i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/rhemasingapore/" target="_blank"
+            ><i class="fab fa-instagram fa-2x"> </i
+          ></a>
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="carousel.js"></script>
+  </body>
+</html>

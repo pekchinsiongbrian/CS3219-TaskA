@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39e014e4d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../template.css" />
+    <link rel="stylesheet" type="text/css" href="../contact.css" />
+    <link rel="stylesheet" type="text/css" href="../button.css" />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="../images/rhema logo.png" alt="Rhema Singapore" />
+        </a>
+      </div>
+      <div class="menu-btn">
+        <div class="menu-btn-burger"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li class="about-dropdown">
+            <a href="#/">About</a>
+            <div class="about-dropdown-content">
+              <a href="../about/about.html#about">About Us</a>
+              <a href="../about/about.html#team">Our team</a>
+              <a href="../about/about.html#faq">FAQ</a>
+            </div>
+          </li>
+          <li class="curriculum-dropdown">
+            <a href="#/">Curriculum</a>
+            <div class="curriculum-dropdown-content">
+              <a href="#">Our courses</a>
+              <a href="#">Schedule</a>
+              <a href="#">Fees</a>
+              <a href="#">Taster</a>
+              <a href="#">Apply</a>
+            </div>
+          </li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Testimonies</a></li>
+          <li><a href="#">Give</a></li>
+          <li>
+            <a href="./contact.html"><b>Contact</b></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main contact-main">
+      <section class="contact">
+        <h1>Contact us</h1>
+        <div class="contact-body">
+          <div class="contact-details">
+            <h2>Opening Hours</h2>
+            <br />
+            <p>Monday - Friday, 9am - 5pm</p>
+            <p>Closed during weekends</p>
+            <br /><br />
+            <i class="fas fa-map-marker-alt fa-3x"></i>
+            <p>780 Upper Serangoon Road</p>
+            <p>Choon Kim House, #02-01, 534649</p>
+            <br /><br />
+            <i class="fas fa-phone fa-3x"></i>
+            <p>+65 6382 1900</p>
+            <br /><br />
+            <i class="fas fa-envelope fa-3x"></i>
+            <p>admin@rhema.org.sg</p>
+          </div>
+          <div class="map-container">
+            <i class="fas fa-search-plus fa-2x zoom zoom-active"></i>
+            <i class="fas fa-search-minus fa-2x zoom"></i>
+            <button class="gmaps">
+              <a
+                href="https://www.google.com/maps/place/Rhema+Bible+Training+Center+Singapore/@1.3544319,103.8770227,17z/data=!3m1!4b1!4m5!3m4!1s0x31da17aff860473d:0xe5b2797692bc25a1!8m2!3d1.3544319!4d103.8792114"
+                target="_blank"
+                >View on Google Maps</a
+              >
+            </button>
+            <img
+              src="../images/map-normal.PNG"
+              alt="map normal"
+              class="map normal-map map-active"
+            />
+            <img
+              src="../images/map-zoomed.PNG"
+              alt="map zoomed"
+              class="map zoomed-in-map"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="social-media">
+        <h1>Follow us on social media!</h1>
+        <a
+          href="https://www.facebook.com/rhema.singapore/"
+          target="_blank"
+          class="fa fa-facebook fa-2x"
+        ></a>
+        <a
+          href="https://www.instagram.com/rhemasingapore/"
+          target="_blank"
+          class="fa fa-instagram fa-2x insta"
+        ></a>
+      </section>
+      <section class="apply" id="apply">
+        <h1>Apply</h1>
+        <p>
+          First time joining our classes? Fill up this form to register! Our
+          team will be in touch with you as soon as possible.
+        </p>
+        </form>
+        <form action="" class="form">
+          <span class="fields">
+            <span class="name-field">
+              <label for="name">Name</label>
+              <br />
+              <input type="text" id="name" name="name" />
+            </span>
+            <span class="email-field">
+              <label for="email">Email</label>
+              <br />
+              <input type="text" id="email" name="email" />
+            </span>
+          </span>
+          <br /><br />
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </section>
+    </main>
+    <button onclick="topFunction()" class="topBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i><br />Top
+    </button>
+    <footer class="footer">
+      <div class="copyright">&copy; 2020 Rhema Singapore</div>
+      <div class="social">
+        <p>
+          Follow us:
+          <a href="https://www.facebook.com/rhema.singapore/" target="_blank"
+            ><i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/rhemasingapore/" target="_blank"
+            ><i class="fab fa-instagram fa-2x"> </i
+          ></a>
+        </p>
+      </div>
+    </footer>
+    <script src="../index.js"></script>
+    <script src="../zoom.js"></script>
+    <script src="../form.js"></script>
+  </body>
+</html>

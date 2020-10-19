@@ -1,0 +1,173 @@
+.contact-main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "contact" "social-media" "apply";
+  background-color: var(--pri-background-color);
+}
+
+.contact {
+  grid-area: contact;
+  padding: 40px;
+}
+
+.contact-details {
+  margin: 30px auto;
+}
+
+.map-container {
+  width: 80vw;
+  height: 80vw;
+  border: solid black 2px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.map {
+  display: none;
+}
+
+.map-active {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom {
+  display: none;
+}
+
+.zoom-active {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.zoom-active:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.gmaps {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.gmaps a {
+  text-decoration: none;
+}
+
+.social-media {
+  grid-area: social-media;
+  margin-top: 60px;
+}
+
+.social-media .fa {
+  margin: 30px 15px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Instagram */
+.insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+}
+
+.apply {
+  grid-area: apply;
+  margin: 60px 30px 30px 30px;
+}
+
+.apply p {
+  margin: 30px;
+}
+
+.form {
+  border: solid black 2px;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+  font: var(--default-font);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .form {
+    max-width: 700px;
+    font-size: 1.1rem;
+  }
+
+  .name-field input,
+  .email-field input {
+    height: 25px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "map details";
+    margin-top: 30px;
+  }
+
+  .map-container {
+    grid-area: map;
+    width: 50vw;
+    height: 50vw;
+    align-self: center;
+  }
+
+  .contact-details {
+    grid-area: details;
+    align-self: center;
+  }
+
+  .form {
+    font-size: 1.2rem;
+  }
+
+  .name-field input,
+  .email-field input {
+    height: 28px;
+    width: 230px;
+  }
+}
